@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <span class="title">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+            <label for="passwordLength">Set the password length (8 to 20 characters): </label>
+            <input type="number" name="passwordLength" id="passwordLength" min="8" max="20">
+
+            <div class="feature-addition">
+
+                <label for="numberInclusion" class="switch">Include Numbers
+                    <input type="checkbox" name="numberInclusion" id="numberInclusion" checked>
+                    <span class="slider round"></span>
+                </label>
+
+                <label for="specialCharInclusion" class="switch">Include Special Character
+                    <input type="checkbox" name="specialCharInclusion" id="specialCharInclusion" checked>
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+            
+
+        <button class="btn-generate" id="generatePassword">Generate passwords</button>
+
+        <div class="result">
+            <input class="outputField" type="text" name="passwordOne" id="passwordOne">
+            <input class="outputField" type="text" name="passwordTwo" id="passwordTwo">
+        </div>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

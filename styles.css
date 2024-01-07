@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #273549;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+
+/* Layout */
+
+.container {
+    background-color: #ecfdf5;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 80px 40px;
+}
+
+.title {
+    display: block;
+    color: #10B981;
+}
+
+#passwordLength {
+    background-color: whitesmoke;
+    display: block;
+    margin: 6px 0 10px;
+    padding: 5px 10px;
+    border: 2px solid #273549;
+    color: #273549;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.feature-addition {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #10B981;
+}
+
+.btn-generate {
+    background-color: #10B981;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.2s;
+}
+
+.btn-generate:hover,
+.btn-generate:focus {
+    box-shadow: 0 0.5em 0.5em -0.5em black;
+    transform: translateY(-0.15em);
+    cursor: pointer;
+}
+
+.outputField {
+   background-color: #273549;
+   margin-right: 10px;
+   margin-bottom: 10px; 
+   border: none;
+   border-radius: 8px;
+   padding: 10px 20px;
+   color: #0bf523;
+   text-align: center;
+   font-size: 1.1rem;
+}
+
+
+/* Checkbox Styling*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 0;
+    right: 150px;
+    bottom: 0;
+    background-color: whitesmoke;
+    border: 2px solid #273549;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #273549;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #10B981;
+}
+
+input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border: none;
+    border-radius: 50%;
+}
